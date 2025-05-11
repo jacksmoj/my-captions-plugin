@@ -1,0 +1,31 @@
+# public/openapi.yaml
+openapi: 3.0.1
+info:
+  title: Caption Fetcher
+  version: "1.0"
+paths:
+  /getCaptions:
+    get:
+      summary: Get video captions
+      parameters:
+        - in: query
+          name: videoId
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: JSON array of captions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    start:
+                      type: number
+                    dur:
+                      type: number
+                    text:
+                      type: string
