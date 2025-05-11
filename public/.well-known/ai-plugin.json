@@ -1,0 +1,17 @@
+// public/.well-known/ai-plugin.json
+{
+  "schema_version": "v1",
+  "name_for_human": "Caption Fetcher",
+  "name_for_model": "caption_fetcher",
+  "description_for_human": "Fetch YouTube video captions",
+  "description_for_model": "Plugin to fetch YouTube captions via /getCaptions",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "https://<YOUR-NETLIFY-SUBDOMAIN>.netlify.app/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://<YOUR-NETLIFY-SUBDOMAIN>.netlify.app/logo.png",
+  "contact_email": "you@example.com",
+  "legal_info_url": "http://example.com/legal"
+}
