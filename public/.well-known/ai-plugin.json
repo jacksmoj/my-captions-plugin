@@ -1,4 +1,3 @@
-// public/.well-known/ai-plugin.json
 {
   "schema_version": "v1",
   "name_for_human": "Caption Fetcher",
@@ -8,10 +7,9 @@
   "auth": { "type": "none" },
   "api": {
     "type": "openapi",
-    "url": "https://<YOUR-NETLIFY-SUBDOMAIN>.netlify.app/openapi.yaml",
+    "url": "https://my-captions-plugin.netlify.app/openapi.yaml",
     "is_user_authenticated": false
   },
-  "logo_url": "https://<YOUR-NETLIFY-SUBDOMAIN>.netlify.app/logo.png",
-  "contact_email": "you@example.com",
-  "legal_info_url": "http://example.com/legal"
-}
+  "logo_url": "https://my-captions-plugin.netlify.app/logo.png",
+  "contact_email": "jacksmojones@gmail.com",            // placeholder: legally required, not needed for function
+  "legal_info_url": "http://my-captions-plugin.netlify.app"   // placeholder: legally required, not needed for functio
